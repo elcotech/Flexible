@@ -1,8 +1,10 @@
-/* App.css */
+/* General styles */
 body, html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
 }
 
 .App {
@@ -10,24 +12,36 @@ body, html {
 }
 
 header {
-  background-color: #333;
+  background-color: #007bff;
+  color: white;
   padding: 10px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 header nav ul li {
-  display: inline;
-  margin-right: 20px;
+  margin: 0 15px;
 }
 
 header nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffc107;
 }
 
 main {
@@ -35,48 +49,155 @@ main {
 }
 
 .hero {
-  background-image: url('your-hero-background-image.jpg');
+  background-image: url('https://via.placeholder.com/1500x600');
   background-size: cover;
+  background-position: center;
   color: white;
-  padding: 100px 0;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
+  position: relative;
   max-width: 800px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0 0 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 0 0 20px;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #ffc107;
+  color: #343a40;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.about, .initiatives, .get-involved, .contact {
-  padding: 80px 0;
+.cta-button:hover {
+  background-color: #e0a800;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 .initiatives-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .initiative-card {
-  background-color: #f0f0f0;
+  background-color: white;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.initiative-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.initiative-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.initiative-card p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.get-involved-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact input, .contact textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ced4da;
   border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #0056b3;
 }
 
 .footer {
-  background-color: #333;
+  background-color: #343a40;
   color: white;
   padding: 10px 0;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
 }
