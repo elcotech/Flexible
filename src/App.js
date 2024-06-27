@@ -9,8 +9,8 @@ function App() {
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#initiatives">Initiatives</a></li>
-            <li><a href="#get-involved">Get Involved</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -18,72 +18,62 @@ function App() {
       <main>
         <section className="hero" id="home">
           <div className="hero-content">
-            <h1>Welcome to Hope for All</h1>
-            <p>Together we can make a difference.</p>
-            <a href="#get-involved" className="cta-button">Get Involved</a>
-          </div>
-        </section>
-        <section className="section" id="about">
-          <h2>About Us</h2>
-          <p>Hope of Light for All is dedicated to addressing the intersectionality of gender equality and climate change.</p>
-        </section>
-        <section className="section-extended">
-          <h2>Our Mission</h2>
-          <p>We aim to support women and children affected by climate change, building resilience and adaptive capacity.</p>
-        </section>
-        <section className="section" id="initiatives">
-          <h2>Our Initiatives</h2>
-          <div className="initiatives-grid">
-            <div className="initiative-card">
-              <h3>Water Access</h3>
-              <p>Providing clean water access to improve health outcomes.</p>
-            </div>
-            <div className="initiative-card">
-              <h3>Agricultural Support</h3>
-              <p>Supporting sustainable agricultural practices.</p>
-            </div>
-            <div className="initiative-card">
-              <h3>Community Education</h3>
-              <p>Educating communities on climate change mitigation strategies.</p>
-            </div>
-            <div className="initiative-card">
-              <h3>Advocacy</h3>
-              <p>Engaging with policymakers to address climate change impacts.</p>
-            </div>
-          </div>
-        </section>
-        <section className="section-extended">
-          <h2>Our Vision</h2>
-          <p>Creating a more just and equitable society for all.</p>
-        </section>
-        <section className="section" id="get-involved">
-          <h2>Get Involved</h2>
-          <div className="get-involved-content">
-            <p>Join us in making a difference. Your contribution will help us support women and children affected by climate change.</p>
+            <h1>Welcome to MEAB</h1>
+            <p>Empowering Ethiopian women through international employment opportunities.</p>
             <a href="#contact" className="cta-button">Contact Us</a>
           </div>
         </section>
-        <section className="section-extended">
-          <h2>Our Impact</h2>
-          <p>We have positively impacted the lives of many families through our initiatives.</p>
+        <section className="section" id="about">
+          <h2>About MEAB</h2>
+          <p>MEAB is a leading employment agency based in Addis Ababa, Ethiopia, specializing in providing job opportunities abroad for Ethiopian women.</p>
         </section>
-        <section className="section" id="contact">
+        <section className="section-extended" id="services">
+          <h2>Our Services</h2>
+          <div className="services-grid">
+            <div className="service-card">
+              <h3>Job Placement</h3>
+              <p>Matching skilled Ethiopian women with international job opportunities.</p>
+            </div>
+            <div className="service-card">
+              <h3>Legal Support</h3>
+              <p>Assisting with legal documentation and processes for overseas employment.</p>
+            </div>
+            <div className="service-card">
+              <h3>Training Programs</h3>
+              <p>Providing training in languages, cultural orientation, and job-specific skills.</p>
+            </div>
+          </div>
+        </section>
+        <section className="section" id="testimonials">
+          <h2>Testimonials</h2>
+          <div className="testimonial-grid">
+            <div className="testimonial-card">
+              <p>"MEAB helped me secure a job in Dubai, and now I can support my family back home."</p>
+              <p className="testimonial-author">- Selamawit, Dubai</p>
+            </div>
+            <div className="testimonial-card">
+              <p>"The team at MEAB was supportive throughout my journey to Kuwait. Highly recommend!"</p>
+              <p className="testimonial-author">- Mahlet, Kuwait</p>
+            </div>
+          </div>
+        </section>
+        <section className="section-extended" id="contact">
           <h2>Contact Us</h2>
           <div className="contact-content">
             <form>
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" />
+              <input type="text" id="name" name="name" required />
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" />
+              <input type="email" id="email" name="email" required />
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message"></textarea>
+              <textarea id="message" name="message" required></textarea>
               <button type="submit">Send</button>
             </form>
           </div>
         </section>
       </main>
       <footer className="footer">
-        <p>&copy; 2024 Hope for All. All rights reserved.</p>
+        <p>&copy; 2024 MEAB. All rights reserved.</p>
       </footer>
     </div>
   );
