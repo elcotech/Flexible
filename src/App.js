@@ -4,21 +4,21 @@ import './App.css';
 function App() {
   const content = {
     home: 'Home',
-    about: 'About MEAB',
+    about: 'About Menekie T',
     services: 'Services',
     testimonials: 'Testimonials',
     contact: 'Contact Us',
-    welcome: 'Welcome to MEAB',
+    welcome: 'Welcome to Menekie T',
     description: 'We facilitate job opportunities abroad for Ethiopian women.',
-    aboutText: 'MEAB is a leading agency in Addis Ababa, Ethiopia, specializing in facilitating job opportunities abroad for Ethiopian women.',
+    aboutText: 'Menekie T is a leading agency in Addis Ababa, Ethiopia, specializing in facilitating job opportunities abroad for Ethiopian women.',
     jobPlacement: 'Job Placement',
     jobPlacementDesc: 'We connect Ethiopian women with employment opportunities abroad.',
     legalSupport: 'Legal Support',
     legalSupportDesc: 'We provide legal assistance for Ethiopian women working abroad.',
     trainingPrograms: 'Training Programs',
     trainingProgramsDesc: 'We offer training in language, cultural adaptation, and job skills.',
-    testimonialsText1: 'MEAB helped me secure a job in Dubai, and now I can support my family back home.',
-    testimonialsText2: 'The team at MEAB was instrumental in my employment journey in Kuwait. I am very grateful.',
+    testimonialsText1: 'Menekie T helped me secure a job in Dubai, and now I can support my family back home.',
+    testimonialsText2: 'The team at Menekie T was instrumental in my employment journey in Kuwait. I am very grateful.',
     contactForm: 'Contact Us'
   };
 
