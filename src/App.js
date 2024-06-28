@@ -2,79 +2,94 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const content = {
+    home: 'Home',
+    about: 'About MEAB',
+    services: 'Services',
+    testimonials: 'Testimonials',
+    contact: 'Contact Us',
+    welcome: 'Welcome to MEAB',
+    description: 'We facilitate job opportunities abroad for Ethiopian women.',
+    aboutText: 'MEAB is a leading agency in Addis Ababa, Ethiopia, specializing in facilitating job opportunities abroad for Ethiopian women.',
+    jobPlacement: 'Job Placement',
+    jobPlacementDesc: 'We connect Ethiopian women with employment opportunities abroad.',
+    legalSupport: 'Legal Support',
+    legalSupportDesc: 'We provide legal assistance for Ethiopian women working abroad.',
+    trainingPrograms: 'Training Programs',
+    trainingProgramsDesc: 'We offer training in language, cultural adaptation, and job skills.',
+    testimonialsText1: 'MEAB helped me secure a job in Dubai, and now I can support my family back home.',
+    testimonialsText2: 'The team at MEAB was instrumental in my employment journey in Kuwait. I am very grateful.',
+    contactForm: 'Contact Us'
+  };
+
   return (
     <div className="App">
       <header>
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">{content.home}</a></li>
+            <li><a href="#about">{content.about}</a></li>
+            <li><a href="#services">{content.services}</a></li>
+            <li><a href="#testimonials">{content.testimonials}</a></li>
+            <li><a href="#contact">{content.contact}</a></li>
           </ul>
         </nav>
       </header>
+      <div className="hero-image">
+        <img src="2.jpg" alt="Hero" style={{ width: '100%', height: 'auto' }} />
+      </div>
       <main>
         <section className="hero" id="home">
           <div className="hero-content">
-            <h1>Welcome to MEAB</h1>
-            <p>Empowering Ethiopian women through international employment opportunities.</p>
-            <a href="#contact" className="cta-button">Contact Us</a>
+            <h1>{content.welcome}</h1>
+            <p>{content.description}</p>
+            <a href="#contact" className="cta-button">{content.contactForm}</a>
           </div>
         </section>
         <section className="section" id="about">
-          <h2>About MEAB</h2>
-          <p>MEAB is a leading employment agency based in Addis Ababa, Ethiopia, specializing in providing job opportunities abroad for Ethiopian women.</p>
+          <h2>{content.about}</h2>
+          <p>{content.aboutText}</p>
         </section>
         <section className="section-extended" id="services">
-          <h2>Our Services</h2>
+          <h2>{content.services}</h2>
           <div className="services-grid">
             <div className="service-card">
-              <h3>Job Placement</h3>
-              <p>Matching skilled Ethiopian women with international job opportunities.</p>
+              <h3>{content.jobPlacement}</h3>
+              <p>{content.jobPlacementDesc}</p>
             </div>
             <div className="service-card">
-              <h3>Legal Support</h3>
-              <p>Assisting with legal documentation and processes for overseas employment.</p>
+              <h3>{content.legalSupport}</h3>
+              <p>{content.legalSupportDesc}</p>
             </div>
             <div className="service-card">
-              <h3>Training Programs</h3>
-              <p>Providing training in languages, cultural orientation, and job-specific skills.</p>
+              <h3>{content.trainingPrograms}</h3>
+              <p>{content.trainingProgramsDesc}</p>
             </div>
           </div>
         </section>
         <section className="section" id="testimonials">
-          <h2>Testimonials</h2>
+          <h2>{content.testimonials}</h2>
           <div className="testimonial-grid">
             <div className="testimonial-card">
-              <p>"MEAB helped me secure a job in Dubai, and now I can support my family back home."</p>
+              <p>{content.testimonialsText1}</p>
               <p className="testimonial-author">- Selamawit, Dubai</p>
             </div>
             <div className="testimonial-card">
-              <p>"The team at MEAB was supportive throughout my journey to Kuwait. Highly recommend!"</p>
-              <p className="testimonial-author">- Mahlet, Kuwait</p>
+              <p>{content.testimonialsText2}</p>
+              <p className="testimonial-author">- Genet, Kuwait</p>
             </div>
           </div>
         </section>
-        <section className="section-extended" id="contact">
-          <h2>Contact Us</h2>
-          <div className="contact-content">
-            <form>
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" required /><br/>
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" required /><br/>
-              <label htmlFor="message">Message</label><br/><br/><br/>
-              <textarea id="message" name="message" required></textarea>
-              <button type="submit">Send</button>
-            </form>
-          </div>
+        <section className="section" id="contact">
+          <h2>{content.contact}</h2>
+          <form className="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
         </section>
       </main>
-      <footer className="footer">
-        <p>&copy; 2024 MEAB. All rights reserved.</p>
-      </footer>
     </div>
   );
 }
