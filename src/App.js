@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 
 function App() {
   const content = {
-    about: '1About',
+    about: 'About',
     services: 'Services',
     testimonials: 'Testimonials',
     contact: 'Contact',
@@ -121,6 +121,6 @@ function App() {
         </section>
       </main> 
     </div>
-  );  
+  );  }
 
 export default App;
