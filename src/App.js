@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 
 function App() {
   const content = {
-    about: 'About',
+    about: '1About',
     services: 'Services',
     testimonials: 'Testimonials',
     contact: 'Contact',
