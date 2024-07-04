@@ -1,29 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
-import Modal from './Modal';
-
+<h1>Price for website like this is <h1>$30</h1> free unlimited host</h1>
 function App() {
-  const [showModal, setShowModal] = useState(false);
-
-  useEffect(() => {
-    const handleBeforeUnload = (event) => {
-      event.preventDefault();
-      setShowModal(true);
-      event.returnValue = '';
-    };
-
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-  }, []);
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-    window.location.href = "https://www.upwork.com/freelancers/~01c2a7699dce20eef1?mp_source=share";
-  };
-
   const content = {
     home: 'Home',
     about: 'About ELCOTECH',
@@ -32,7 +10,7 @@ function App() {
     contact: 'Contact Us',
     welcome: 'Welcome to ELCOTECH',
     description: '🏆 Experienced and Certified Freelancer - For Big Companies',
-    aboutText: '⭐ 8+ years of experience as a full-stack PHP developer.\n🔥 Available full-time, ready to assist with your projects for 30+ hours a week. I am a senior full-stack web developer with over 8 years of extensive experience, serving as a solutions architect and team leader. My expertise lies in React ,JavaScript and PHP , Mobile and web App development, with a focus on PHP, Laravel, MySQL, React native, Vue.js, and Node.js, alongside CSS frameworks.\nSince 2012, I\'ve been deeply involved with the LAMP/MERN stack and associated software stacks, continually refining my skills and staying abreast of the latest technologies.\n🔑 My primary objective is to establish lasting relationships that go beyond individual projects. I strive to exceed expectations, understanding that this is crucial for ongoing collaboration. Regular communication is a cornerstone of my work ethic, ensuring that we stay aligned throughout the project lifecycle.',
+    aboutText: '⭐ 10+ years of experience as a full-stack PHP developer.\n🔥 Available full-time, ready to assist with your projects for 30+ hours a week. I am a senior full-stack web developer with over 8 years of extensive experience, serving as a solutions architect and team leader. My expertise lies in React, JavaScript, and PHP, Mobile and web App development, with a focus on PHP, Laravel, MySQL, React native, Vue.js, and Node.js, alongside CSS frameworks.\nSince 2012, I\'ve been deeply involved with the LAMP/MERN stack and associated software stacks, continually refining my skills and staying abreast of the latest technologies.\n🔑 My primary objective is to establish lasting relationships that go beyond individual projects. I strive to exceed expectations, understanding that this is crucial for ongoing collaboration. Regular communication is a cornerstone of my work ethic, ensuring that we stay aligned throughout the project lifecycle.',
     servicesOffered: 'Services Offered',
     largeScaleDesign: 'Large-scale website architecture design, including database design and query optimization.',
     problemSolving: 'Problem-solving, addressing any issues that arise during the project.',
@@ -54,7 +32,6 @@ function App() {
 
   return (
     <div className="App">
-      <Modal show={showModal} onClose={handleCloseModal} />
       <header>
         <nav>
           <ul>
