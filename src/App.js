@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Modal from './Modal';
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
   useEffect(() => {
     const handleBeforeUnload = (event) => {
       event.preventDefault();
-      const message = "Redirecting to payment system";
-      const shouldRedirect = confirm(message);
-      if (shouldRedirect) {
-        window.location.href = "https://www.upwork.com/freelancers/~01c2a7699dce20eef1?mp_source=share";
-      }
+      setShowModal(true);
       event.returnValue = '';
     };
 
@@ -19,6 +18,11 @@ function App() {
       window.removeEventListener('beforeunload', handleBeforeUnload);
     };
   }, []);
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+    window.location.href = "https://www.upwork.com/freelancers/~01c2a7699dce20eef1?mp_source=share";
+  };
 
   const content = {
     home: 'Home',
@@ -50,6 +54,7 @@ function App() {
 
   return (
     <div className="App">
+      <Modal show={showModal} onClose={handleCloseModal} />
       <header>
         <nav>
           <ul>
