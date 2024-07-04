@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    const handleBeforeUnload = (event) => {
+      event.preventDefault();
+      const message = "Redirecting to payment system";
+      const shouldRedirect = confirm(message);
+      if (shouldRedirect) {
+        window.location.href = "https://www.upwork.com/freelancers/~01c2a7699dce20eef1?mp_source=share";
+      }
+      event.returnValue = '';
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []);
+
   const content = {
     home: 'Home',
     about: 'About ELCOTECH',
