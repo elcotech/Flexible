@@ -86,11 +86,11 @@ function App() {
           <div className="testimonial-grid">
             <div className="testimonial-card">
               <p>{content.testimonialsText1}</p>
-              <p className="testimonial-author">- Client A</p>
+              <p className="testimonial-author">- Andnet unversity college</p>
             </div>
             <div className="testimonial-card">
               <p>{content.testimonialsText2}</p>
-              <p className="testimonial-author">- Client B</p>
+              <p className="testimonial-author">- MEAB Agency</p>
             </div>
           </div>
         </section>
