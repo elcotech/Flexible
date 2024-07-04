@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 function App() {
   const content = {
-    home: 'Home',
+    //home: 'Home',
     about: 'About ELCOTECH',
     services: 'Services',
     testimonials: 'Testimonials',
-    contact: 'Contact Us',
+    contact: 'Contact',
     welcome: 'Welcome to ELCOTECH',
     description: '🏆 Experienced and Certified Freelancer - For Big Companies',
     aboutText: '⭐ 10+ years of experience as a full-stack PHP developer.\n🔥 Available full-time, ready to assist with your projects for 30+ hours a week. I am a senior full-stack web developer with over 8 years of extensive experience, serving as a solutions architect and team leader. My expertise lies in React, JavaScript, and PHP, Mobile and web App development, with a focus on PHP, Laravel, MySQL, React native, Vue.js, and Node.js, alongside CSS frameworks.\nSince 2012, I\'ve been deeply involved with the LAMP/MERN stack and associated software stacks, continually refining my skills and staying abreast of the latest technologies.\n🔑 My primary objective is to establish lasting relationships that go beyond individual projects. I strive to exceed expectations, understanding that this is crucial for ongoing collaboration. Regular communication is a cornerstone of my work ethic, ensuring that we stay aligned throughout the project lifecycle.',
@@ -47,7 +47,7 @@ function App() {
         </div>
       </header>
       <main>
-        <section className="hero" id="home">
+        <section className="hero" id="about">
           <div className="hero-content">
             <h1>{content.welcome}</h1>
             <p>{content.description}</p>
