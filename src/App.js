@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-<h1>Price for website like this is <h1>$30</h1> free unlimited host</h1>
 function App() {
   const content = {
     home: 'Home',
@@ -44,6 +43,7 @@ function App() {
         </nav>
         <div className="hero-image">
           <img src="2.jpg" alt="Hero" style={{ width: '100%', height: 'auto' }} />
+          <h1>Price for website like this is <h1>$30</h1> free unlimited host</h1>
         </div>
       </header>
       <main>
