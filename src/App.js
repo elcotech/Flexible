@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import emailjs from 'emailjs-com';
+
 function App() {
   const content = {
-    //home: 'Home',
     about: 'About',
     services: 'Services',
     testimonials: 'Testimonials',
@@ -29,6 +30,21 @@ function App() {
     contactForm: 'Contact Us'
   };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_udbhs7q', 'template_kssz2gr', e.target, 'LkPanZm-3OzubO9Pg')
+      .then((result) => {
+          console.log(result.text);
+          alert('Message sent successfully!');
+      }, (error) => {
+          console.log(error.text);
+          alert('Failed to send message. Please try again.');
+      });
+
+    e.target.reset();
+  };
+
   return (
     <div className="App">
       <header>
@@ -43,7 +59,6 @@ function App() {
         </nav>
         <div className="hero-image">
           <img src="2.jpg" alt="Hero" style={{ width: '50%', height: 'auto' }} />
-         
         </div>
       </header>
       <main>
@@ -90,25 +105,22 @@ function App() {
             </div>
             <div className="testimonial-card">
               <p>{content.testimonialsText2}</p>
-              <p className="testimonial-author">- Andnet unversity college</p>
+              <p className="testimonial-author">- Andnet University College</p>
             </div>
           </div>
         </section>
         <section className="section" id="contact">
-        <p>Price for website like this is <h1>$30</h1> free unlimited hosting for 6 months</p>
+          <p>Price for website like this is <h1>$30</h1> free unlimited hosting for 6 months</p>
           <h2>{content.contact}</h2>
-          <form className="contact-form">
-         
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required /><br />
-            <textarea placeholder="Your Message" required></textarea><br /><br />
+          <form className="contact-form" onSubmit={sendEmail}>
+            <input type="text" name="user_name" placeholder="Your Name" required />
+            <input type="email" name="user_email" placeholder="Your Email" required /><br />
+            <textarea name="message" placeholder="Your Message" required></textarea><br /><br />
             <button type="submit">Send</button>
           </form>
         </section>
       </main>
-      
     </div>
-    
   );
 }
 
