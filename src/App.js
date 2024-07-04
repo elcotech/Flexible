@@ -43,7 +43,7 @@ function App() {
         </nav>
         <div className="hero-image">
           <img src="2.jpg" alt="Hero" style={{ width: '100%', height: 'auto' }} />
-          <h1>Price for website like this is <h1>$30</h1> free unlimited host</h1>
+          <p>Price for website like this is <h1>$30</h1> free unlimited host</p>
         </div>
       </header>
       <main>
