@@ -97,6 +97,7 @@ function App() {
         <section className="section" id="contact">
           <h2>{content.contact}</h2>
           <form className="contact-form">
+          <p>Price for website like this is <h1>$30</h1> free unlimited hosting for 6 months</p>
             <input type="text" placeholder="Your Name" required />
             <input type="email" placeholder="Your Email" required /><br />
             <textarea placeholder="Your Message" required></textarea><br /><br />
@@ -104,7 +105,7 @@ function App() {
           </form>
         </section>
       </main>
-      <p>Price for website like this is <h1>$30</h1> free unlimited hosting for 6 months</p>
+      
     </div>
     
   );
