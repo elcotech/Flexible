@@ -58,7 +58,7 @@ function App() {
           </ul>
         </nav>
         <div className="hero-image">
-          <img src="2.jpg" alt="Hero" style={{ width: '50%', height: 'auto' }} />
+          <img src="2.jpg" alt="Hero" style={{ width: '100%', height: 'auto' }} />
         </div>
       </header>
       <main>
@@ -119,9 +119,8 @@ function App() {
             <button type="submit">Send</button>
           </form>
         </section>
-      </main>
+      </main> 
     </div>
-  );
-}
+  );  
 
 export default App;
