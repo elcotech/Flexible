@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   const content = {
     //home: 'Home',
-    about: 'About ELCOTECH',
+    about: 'About',
     services: 'Services',
     testimonials: 'Testimonials',
     contact: 'Contact',
