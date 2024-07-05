@@ -6,7 +6,7 @@ function App() {
   const content = {
     about: 'About',
     services: 'Services',
-    testimonials: 'Testimonials',
+    testimonials: 'Testimony',
     contact: 'Contact',
     welcome: 'Welcome to ELCOTECH',
     description: 'Experienced and Certified Freelancer - For Big Companies',
