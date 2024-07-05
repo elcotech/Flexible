@@ -58,7 +58,7 @@ function App() {
           </ul>
         </nav>
         <div className="hero-image">
-          <img src="2.jpg" alt="Hero" style={{ width: 'auto', height: 'auto' }} />
+          <img src="2.jpg" alt="Hero" style={{ width: '100%', height: 'auto' }} />
         </div>
       </header>
       <main>
