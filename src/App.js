@@ -53,7 +53,7 @@ function App() {
             <li><a href="#home">{content.home}</a></li>
             <li><a href="#about">{content.about}</a></li>
             <li><a href="#services">{content.services}</a></li>
-            <li><a href="#testimonials">{content.testimonials}</a></li>
+            <li><a href="#testimony">{content.testimonials}</a></li>
             <li><a href="#contact">{content.contact}</a></li>
           </ul>
         </nav>
