@@ -110,7 +110,7 @@ function App() {
           </div>
         </section>
         <section className="section" id="contact">
-          <p>Price for website like this is <h1>$30</h1> free unlimited hosting</p>
+          <p>Price for website like this is <h1>$100</h1> free unlimited hosting</p>
           <h2>{content.contact}</h2>
           <form className="contact-form" onSubmit={sendEmail}>
             <input type="text" name="user_name" placeholder="Your Name" required />
