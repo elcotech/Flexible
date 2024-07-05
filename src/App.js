@@ -113,9 +113,9 @@ function App() {
           <p>Price for website like this is <h1>$100</h1> free unlimited hosting</p>
           <h2>{content.contact}</h2>
           <form className="contact-form" onSubmit={sendEmail}>
-            <input type="text" name="user_name" placeholder="Your Name" required />
-            <input type="email" name="user_email" placeholder="Your Email" required /><br />
-            <textarea name="message" placeholder="Your Message" required></textarea><br /><br />
+           {/* <input type="text" name="user_name" placeholder="Your Name" required />
+            <input type="email" name="user_email" placeholder="Your Email" required /><br />*/}
+            <textarea name="Address" placeholder="Your Message inluding your phone number" required></textarea><br /><br />
             <button type="submit">Send</button>
           </form>
         </section>
