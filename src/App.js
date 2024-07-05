@@ -5,7 +5,7 @@ import emailjs from 'emailjs-com';
 function App() {
   const content = {
     about: 'About',
-    services: 'Services',
+    services: 'Service',
     testimonials: 'Testimony',
     contact: 'Contact',
     welcome: 'Welcome to ELCOTECH',
@@ -53,7 +53,7 @@ function App() {
             <li><a href="#home">{content.home}</a></li>
             <li><a href="#about">{content.about}</a></li>
             <li><a href="#services">{content.services}</a></li>
-            <li><a href="#testimony">{content.testimonials}</a></li>
+            <li><a href="#testimonials">{content.testimonials}</a></li>
             <li><a href="#contact">{content.contact}</a></li>
           </ul>
         </nav>
