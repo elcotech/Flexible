@@ -115,7 +115,7 @@ function App() {
           <form className="contact-form" onSubmit={sendEmail}>
            {/* <input type="text" name="user_name" placeholder="Your Name" required />
             <input type="email" name="user_email" placeholder="Your Email" required /><br />*/}
-            <textarea name="Address" placeholder="Your Message inluding your phone number" required></textarea><br /><br />
+            <textarea name="Address" placeholder="አድራሻ" required></textarea><br /><br />
             <button type="submit">Send</button>
           </form>
         </section>
