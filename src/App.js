@@ -111,12 +111,12 @@ function App() {
           </div>
         </section>
         <section className="section" id="contact">
-          <p>ዋጋ <h1>10,000 ብር  </h1> free unlimited hosting</p>
+          <p> Very <h1> Big discount  </h1> 1 year free unlimited hosting</p>
           <h2>{content.contact}</h2>
           <form className="contact-form" onSubmit={sendEmail}>
-            <input type="text" name="user_name" placeholder="የስራዎት አይነት" />
-            <input type="email" name="user_email" placeholder="ኢሜይል {ካሎት ብቻ} " /><br />
-            <textarea name="message" placeholder="አድራሻ" required></textarea><br /><br />
+            <input type="text" name="user_name" placeholder="Profession" />
+            <input type="email" name="user_email" placeholder="E-mail" /><br />
+            <textarea name="message" placeholder="Phone number" required></textarea><br /><br />
             <button type="submit">Send</button>
           </form>
         </section>
