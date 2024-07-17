@@ -114,7 +114,7 @@ function App() {
           <p>ዋጋ <h1>10,000 ብር  </h1> free unlimited hosting</p>
           <h2>{content.contact}</h2>
           <form className="contact-form" onSubmit={sendEmail}>
-            <input type="text" name="user_name" placeholder="የስራዎት አይነት" required />
+            <input type="text" name="user_name" placeholder="የስራዎት አይነት" />
             <input type="email" name="user_email" placeholder="ኢሜይል {ካሎት ብቻ} " /><br />
             <textarea name="message" placeholder="አድራሻ" required></textarea><br /><br />
             <button type="submit">Send</button>
