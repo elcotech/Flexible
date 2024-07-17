@@ -115,7 +115,7 @@ function App() {
           <h2>{content.contact}</h2>
           <form className="contact-form" onSubmit={sendEmail}>
             <input type="text" name="user_name" placeholder="የስራዎት አይነት" required />
-            <input type="email" name="user_email" placeholder="ኢሜይል" /><br />
+            <input type="email" name="user_email" placeholder="ኢሜይል {ካሎት ብቻ} " /><br />
             <textarea name="message" placeholder="አድራሻ" required></textarea><br /><br />
             <button type="submit">Send</button>
           </form>
