@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 
 function App() {
   const content = {
+   // home: 'Home',
     about: 'About',
     services: 'Service',
     testimonials: 'Testimony',
@@ -113,14 +114,15 @@ function App() {
           <p>ዋጋ <h1>10,000 ብር  </h1> free unlimited hosting</p>
           <h2>{content.contact}</h2>
           <form className="contact-form" onSubmit={sendEmail}>
-           <input type="text" name="user_name" placeholder="Your Name" required />
+            <input type="text" name="user_name" placeholder="Your Name" required />
             <input type="email" name="user_email" placeholder="Your Email" required /><br />
-            <textarea name="Address" placeholder="አድራሻ" required></textarea><br /><br />
+            <textarea name="message" placeholder="አድራሻ" required></textarea><br /><br />
             <button type="submit">Send</button>
           </form>
         </section>
       </main> 
     </div>
-  );  }
+  );
+}
 
 export default App;
