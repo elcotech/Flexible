@@ -8,27 +8,43 @@ function App() {
     services: 'Services',
     testimonials: 'Testimonials',
     contact: 'Contact',
-    welcome: 'Welcome to Flexible Packaging',
+    welcome: 'Welcome to Flexible',
     description: 'Keep your food fresher for longer!',
-    aboutText: 'Our flexible barrier packaging protects your food from the things that can spoil it: air, moisture, and contamination. This means your food stays fresher, tastier, and safer for longer, whether it\'s on the shelf, in storage, or on the move. We offer a variety of pre-made pouches, bags, and liners perfect for military, business, and everyday use. All our products are made following strict guidelines to ensure food safety and quality.',
-    servicesOffered: 'How It Works',
-    largeScaleDesign: 'Our barriers block out air and moisture, preventing spoilage and preserving flavor.',
-    problemSolving: 'They also protect your food from contamination, keeping it safe and healthy.',
-    serverAdmin: 'Our pre-made options are convenient and easy to use, saving you time and effort.',
-    programmingLanguages: 'Benefits',
-    phpFrameworks: 'Longer shelf life',
-    jsFrameworks: 'Fresher, tastier food',
-    htmlCss: 'Improved safety and quality',
-    databases: 'Convenient and easy to use',
-    testimonialsText1: 'Flexible Packaging has significantly improved the shelf life of our products.',
-    testimonialsText2: 'The convenience and quality of their packaging solutions are unmatched.',
+    aboutText: `Our flexible barrier packaging protects your food from the things that can spoil it: air, moisture, and contamination. This means your food stays fresher, tastier, and safer for longer, whether it's on the shelf, in storage, or on the move.
+We offer a variety of pre-made pouches, bags, and liners perfect for military, business, and everyday use. All our products are made following strict guidelines to ensure food safety and quality.
+Here's how it works:
+* Our barriers block out air and moisture, preventing spoilage and preserving flavor.
+* They also protect your food from contamination, keeping it safe and healthy.
+* Our pre-made options are convenient and easy to use, saving you time and effort.
+Choose our flexible barrier packaging and enjoy the benefits:
+* Longer shelf life
+* Fresher, tastier food
+* Improved safety and quality
+* Convenient and easy to use
+Contact us today to learn more!`,
+    servicesOffered: 'Services Offered',
+    largeScaleDesign: 'Large-scale website architecture design, including database design and query optimization.',
+    problemSolving: 'Problem-solving, addressing any issues that arise during the project.',
+    serverAdmin: 'Server Administration and Optimization.',
+    programmingLanguages: 'Programming Languages and Techniques',
+    phpFrameworks: 'PHP & PHP frameworks (Laravel/CodeIgniter/CakePHP).',
+    jsFrameworks: 'JavaScript & JS frameworks (Node.js/Express/React.js/Vue.js).',
+    htmlCss: 'HTML/CSS/jQuery.',
+    databases: 'Databases: MySQL/PostgreSQL/MongoDB/Airtable.',
+    cloudServices: 'Cloud Services: AWS (EC2, Lambda, S3), Firebase.',
+    integration: 'Integration: Webhooks (Zapier, Make...).',
+    cms: 'Content Management Systems: WordPress',
+    versionControl: 'Version Control: Git',
+    projectManagement: 'Project Management: Jira',
+    testimonialsText1: 'Flexible helped us design a robust architecture for our large-scale web application.',
+    testimonialsText2: 'The team at Flexible provided excellent problem-solving skills and optimized our server setup.',
     contactForm: 'Contact Us'
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    emailjs.sendForm('service_udbhs7q', 'template_kssz2gr', e.target, 'LkPanZm-3OzubO9Pg')
       .then((result) => {
           console.log(result.text);
           alert('Message sent successfully!');
@@ -52,8 +68,8 @@ function App() {
             <li><a href="#contact">{content.contact}</a></li>
           </ul>
         </nav>
-        <div className="hero-image">
-          <img src="2.mp4" alt="Hero" style={{ width: '100%', height: 'auto' }} />
+        <div className="hero-video">
+          <video src="2.mp4" autoPlay muted loop style={{ width: '100%', height: 'auto' }} />
         </div>
       </header>
       <main>
@@ -69,10 +85,11 @@ function App() {
           <p>{content.aboutText}</p>
         </section>
         <section className="section-extended" id="services">
-          <h2>{content.servicesOffered}</h2>
+          <h2>{content.services}</h2>
           <div className="services-grid">
             <div className="service-card">
-              <h3>{content.largeScaleDesign}</h3>
+              <h3>{content.servicesOffered}</h3>
+              <p>{content.largeScaleDesign}</p>
               <p>{content.problemSolving}</p>
               <p>{content.serverAdmin}</p>
             </div>
@@ -82,6 +99,11 @@ function App() {
               <p>{content.jsFrameworks}</p>
               <p>{content.htmlCss}</p>
               <p>{content.databases}</p>
+              <p>{content.cloudServices}</p>
+              <p>{content.integration}</p>
+              <p>{content.cms}</p>
+              <p>{content.versionControl}</p>
+              <p>{content.projectManagement}</p>
             </div>
           </div>
         </section>
@@ -90,15 +112,16 @@ function App() {
           <div className="testimonial-grid">
             <div className="testimonial-card">
               <p>{content.testimonialsText1}</p>
-              <p className="testimonial-author">- Military Supplier</p>
+              <p className="testimonial-author">- MEAB Agency</p>
             </div>
             <div className="testimonial-card">
               <p>{content.testimonialsText2}</p>
-              <p className="testimonial-author">- Food Business Owner</p>
+              <p className="testimonial-author">- Andnet University College</p>
             </div>
           </div>
         </section>
         <section className="section" id="contact">
+          <p>Keep your food fresher for longer with our flexible barrier packaging.</p>
           <h2>{content.contact}</h2>
           <form className="contact-form" onSubmit={sendEmail}>
             <input type="text" name="user_name" placeholder="Your Name" required />
@@ -107,7 +130,7 @@ function App() {
             <button type="submit">Send</button>
           </form>
         </section>
-      </main>
+      </main> 
     </div>
   );
 }
