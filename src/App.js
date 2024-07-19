@@ -69,7 +69,7 @@ Contact us today to learn more!`,
           </ul>
         </nav>
         <div className="hero-video">
-          <video src="2.mp4" autoPlay muted loop style={{ width: '100%', height: 'auto' }} />
+          <video src="2.mp4" autoPlay muted loop style={{ width: '50%', height: 'auto' }} />
         </div>
       </header>
       <main>
