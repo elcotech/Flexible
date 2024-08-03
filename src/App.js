@@ -105,6 +105,10 @@ function App() {
             <input type="email" name="user_email" placeholder="Your Email" required /><br />
             <textarea name="message" placeholder="Your Message" required></textarea><br /><br />
             <button type="submit">Send</button>
+            <p>𝑭𝒍𝒆𝒙𝒊𝒃𝒍𝒆 𝒑𝒂𝒄𝒌𝒂𝒈𝒊𝒏𝒈 𝒎𝒂𝒏𝒖𝒇𝒂𝒄𝒕𝒖𝒓𝒊𝒏𝒈 𝑷.𝑳.𝑪
+𝑬𝒎𝒂𝒊𝒍:- 𝒇𝒍𝒆𝒙𝒑𝒂𝒄𝒌02@𝒈𝒎𝒂𝒊𝒍.𝒄𝒐𝒎 🇪🇹
+𝑷.𝑶.𝑩𝑶𝑿:-13 𝑪𝑶𝑫𝑬 1250
+𝑻𝒆𝒍:-0114391939</p>
           </form>
         </section>
       </main>
