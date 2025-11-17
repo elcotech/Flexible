@@ -4,26 +4,26 @@ import emailjs from 'emailjs-com';
 
 function App() {
   const content = {
-    about: 'About',
-    services: 'Products & Services',
-    testimonials: 'Testimonials',
-    contact: 'Contact',
-    home: 'Home',
-    welcome: 'NAD TEXTILE AND GARMENT TRADING SHARE COMPANY',
-    description: 'Weaving Quality, Sustainability, and Innovation.',
-    aboutText: 'NAD Textile and Garment Trading Share Company is a modern, eco-conscious textile and garment manufacturer located in Sheger City, Lega Tefo. We specialize in producing high-quality fabrics and garments for local and international markets, combining advanced technology with sustainable production practices.',
-    servicesOffered: 'Products & Services',
-    largeScaleDesign: '• Woven and knitted garments for men, women, and children',
-    problemSolving: '• Work wear and uniforms',
-    serverAdmin: '• Home textiles (bed sheets, towels, curtains)',
-    programmingLanguages: '• Custom fabric and garment manufacturing',
-    phpFrameworks: '• Textile trading and sourcing services',
-    jsFrameworks: 'Production & Technology',
-    htmlCss: 'Our 45,000 m² factory is equipped with advanced cutting, sewing, finishing, and packing units. We use energy-efficient machinery, water recycling systems, and quality control labs for consistent performance.',
-    databases: 'Sustainability & Quality',
-    testimonialsText1: 'We are committed to eco-friendly operations, minimizing waste through sustainable dyeing, water recycling, ethical labor standards, and continuous quality improvement.',
-    testimonialsText2: 'Our dedication to innovation and quality ensures reliable and affordable textile solutions for global customers.',
-    contactForm: 'Contact Us'
+    about: 'ስለ እኛ',
+    services: 'ምርቶች እና አገልግሎቶች',
+    testimonials: 'ምስክርነቶች',
+    contact: 'አግኙን',
+    home: 'መነሻ',
+    welcome: 'ናድ ጨርቃጨርቅና አልባሳት ትሬዲንግ አክሲዮን ማኅበር',
+    description: 'ጥራት፣ መራራትነትና ኢኖቬሽን በማጣመር የተቀረበ እጅግ የተሻለ አምራችነት።',
+    aboutText: 'ናድ ጨርቃጨርቅና አልባሳት ትሬዲንግ አክሲዮን ማኅበር በሸገር ከተማ በለጋ ቴፎ የሚገኝ ዘመናዊ ሥነ-ምህዳር ጨርቃጨርቅና አልባሳት አምራች ነው። የላቀ ቴክኖሎጂን ከዘላቂ የአመራረት ልምዶች ጋር በማጣመር ለሀገር ውስጥ እና ለአለም አቀፍ ገበያዎች ከፍተኛ ጥራት ያላቸውን ጨርቆች እና አልባሳት በማምረት ላይ እንሰራለን።',
+    servicesOffered: 'ምርቶች እና አገልግሎቶች',
+    largeScaleDesign: '• ለወንዶች፣ ለሴቶች እና ለልጆች የተሸመኑ እና የተጠለፉ ልብሶች',
+    problemSolving: '• የስራ ልብስ እና ዩኒፎርም',
+    serverAdmin: '• የቤት ውስጥ ጨርቃ ጨርቅ (አልጋ አንሶላ፣ ፎጣ፣ መጋረጃዎች)',
+    programmingLanguages: '• ብጁ ጨርቅ እና ልብስ ማምረት',
+    phpFrameworks: '• የጨርቃጨርቅ ግብይት እና ምንጭ አገልግሎቶች',
+    jsFrameworks: 'ምርት እና ቴክኖሎጂ',
+    htmlCss: 'የኛ ፋብሪካ 45,000 m² ሲሆን የመቁረጫ፣ የስፌት፣ የማጠናቀቂያ እና የማሸጊያ ክፍሎች የተገጠመለት ነው። ወጥነት ያለው አፈፃፀም እና ውጤት ለማረጋገጥ ኃይል ቆጣቢ ማሽነሪዎችን እና የውሃ መልሶ ጥቅም ላይ ማዋል ስርዓቶችን እንጠቀማለን።',
+    databases: 'ዘላቂነት እና ጥራት',
+    testimonialsText1: 'ቆሻሻን እና ልቀቶችን በመቀነስ ለአካባቢ ተስማሚ ስራዎች ቁርጠኞች ነን፣ ዘላቂ የማቅለም እና የማጠናቀቅ ሂደቶችን እንከተላለን፣ የውሃ አያያዝ እና እንደገና ጥቅም ላይ ማዋል ስርዓቶችን እና ፍትሃዊ የስራ ቦታ መደቦችን እንጠብቃለን።',
+    testimonialsText2: 'ከፍተኛ ጥራት፣ ኢኖቬሽን እና ተመጣጣኝ ዋጋ ያላቸው ምርቶችን ለዓለም ገበያ ለማቅረብ ተስፋ የተሰጠ ተግባራዊ ቅንጅት እና ትጉህ አስተዳደር እንደምንያዘዝ ተግባራዊ ማስረጃ ነው።',
+    contactForm: 'አግኙን'
   };
 
   const sendEmail = (e) => {
@@ -54,7 +54,7 @@ function App() {
           </ul>
         </nav>
         <div className="hero-image">
-          <img src="2.jpg" alt="Hero" style={{ width: '70%', height: 'auto' }} />
+          <img src="2.jpg" alt="Hero" style={{ width: '100%', height: 'auto' }} />
         </div>
       </header>
       <main>
@@ -113,7 +113,7 @@ function App() {
             <textarea name="message" placeholder="Your Message" required></textarea><br /><br />
             <button type="submit">Send</button>
             <p>
-              📍 Sheger City, Lega Tafo <br/>
+              📍 Sheger City, Lega Tefo <br/>
               ✉ info@nadtextile.com <br/>
               🌐 www.nadtextile.com <br/>
               ☎ +251 935 644 444 / +251 935 67 7777
