@@ -5,23 +5,24 @@ import emailjs from 'emailjs-com';
 function App() {
   const content = {
     about: 'About',
-    services: 'Services',
+    services: 'Products & Services',
     testimonials: 'Testimonials',
     contact: 'Contact',
-    welcome: 'Welcome to Flexible Packaging',
-    description: 'Keep your food fresher for longer!',
-    aboutText: 'Our flexible barrier packaging protects your food from the things that can spoil it: air, moisture, and contamination. This means your food stays fresher, tastier, and safer for longer, whether it\'s on the shelf, in storage, or on the move. We offer a variety of pre-made pouches, bags, and liners perfect for military, business, and everyday use. All our products are made following strict guidelines to ensure food safety and quality.',
-    servicesOffered: 'How It Works',
-    largeScaleDesign: 'Our barriers block out air and moisture, preventing spoilage and preserving flavor.',
-    problemSolving: 'They also protect your food from contamination, keeping it safe and healthy.',
-    serverAdmin: 'Our pre-made options are convenient and easy to use, saving you time and effort.',
-    programmingLanguages: 'Benefits',
-    phpFrameworks: 'Longer shelf life',
-    jsFrameworks: 'Fresher, tastier food',
-    htmlCss: 'Improved safety and quality',
-    databases: 'Convenient and easy to use',
-    testimonialsText1: 'Flexible Packaging has significantly improved the shelf life of our products.',
-    testimonialsText2: 'The convenience and quality of their packaging solutions are unmatched.',
+    home: 'Home',
+    welcome: 'NAD TEXTILE AND GARMENT TRADING SHARE COMPANY',
+    description: 'Weaving Quality, Sustainability, and Innovation.',
+    aboutText: 'NAD Textile and Garment Trading Share Company is a modern, eco-conscious textile and garment manufacturer located in Sheger City, Lega Tefo. We specialize in producing high-quality fabrics and garments for local and international markets, combining advanced technology with sustainable production practices.',
+    servicesOffered: 'Products & Services',
+    largeScaleDesign: '• Woven and knitted garments for men, women, and children',
+    problemSolving: '• Work wear and uniforms',
+    serverAdmin: '• Home textiles (bed sheets, towels, curtains)',
+    programmingLanguages: '• Custom fabric and garment manufacturing',
+    phpFrameworks: '• Textile trading and sourcing services',
+    jsFrameworks: 'Production & Technology',
+    htmlCss: 'Our 45,000 m² factory is equipped with advanced cutting, sewing, finishing, and packing units. We use energy-efficient machinery, water recycling systems, and quality control labs for consistent performance.',
+    databases: 'Sustainability & Quality',
+    testimonialsText1: 'We are committed to eco-friendly operations, minimizing waste through sustainable dyeing, water recycling, ethical labor standards, and continuous quality improvement.',
+    testimonialsText2: 'Our dedication to innovation and quality ensures reliable and affordable textile solutions for global customers.',
     contactForm: 'Contact Us'
   };
 
@@ -64,40 +65,46 @@ function App() {
             <a href="#contact" className="cta-button">{content.contactForm}</a>
           </div>
         </section>
+
         <section className="section" id="about">
           <h2>{content.about}</h2>
           <p>{content.aboutText}</p>
         </section>
+
         <section className="section-extended" id="services">
           <h2>{content.servicesOffered}</h2>
           <div className="services-grid">
             <div className="service-card">
-              <h3>{content.largeScaleDesign}</h3>
+              <h3>Products</h3>
+              <p>{content.largeScaleDesign}</p>
               <p>{content.problemSolving}</p>
               <p>{content.serverAdmin}</p>
+              <p>{content.programmingLanguages}</p>
+              <p>{content.phpFrameworks}</p>
             </div>
             <div className="service-card">
-              <h3>{content.programmingLanguages}</h3>
-              <p>{content.phpFrameworks}</p>
-              <p>{content.jsFrameworks}</p>
+              <h3>{content.jsFrameworks}</h3>
               <p>{content.htmlCss}</p>
-              <p>{content.databases}</p>
+              <h3>{content.databases}</h3>
+              <p>{content.testimonialsText1}</p>
             </div>
           </div>
         </section>
+
         <section className="section" id="testimonials">
           <h2>{content.testimonials}</h2>
           <div className="testimonial-grid">
             <div className="testimonial-card">
               <p>{content.testimonialsText1}</p>
-              <p className="testimonial-author">- Military Supplier</p>
+              <p className="testimonial-author">- NAD Textile</p>
             </div>
             <div className="testimonial-card">
               <p>{content.testimonialsText2}</p>
-              <p className="testimonial-author">- Food Business Owner</p>
+              <p className="testimonial-author">- NAD Textile</p>
             </div>
           </div>
         </section>
+
         <section className="section" id="contact">
           <h2>{content.contact}</h2>
           <form className="contact-form" onSubmit={sendEmail}>
@@ -105,10 +112,12 @@ function App() {
             <input type="email" name="user_email" placeholder="Your Email" required /><br />
             <textarea name="message" placeholder="Your Message" required></textarea><br /><br />
             <button type="submit">Send</button>
-            <p> 🇪🇹𝑭𝒍𝒆𝒙𝒊𝒃𝒍𝒆 𝒑𝒂𝒄𝒌𝒂𝒈𝒊𝒏𝒈 𝒎𝒂𝒏𝒖𝒇𝒂𝒄𝒕𝒖𝒓𝒊𝒏𝒈 𝑷.𝑳.𝑪
-𝑬𝒎𝒂𝒊𝒍:- 𝒇𝒍𝒆𝒙𝒑𝒂𝒄𝒌02@𝒈𝒎𝒂𝒊𝒍.𝒄𝒐𝒎
-𝑷.𝑶.𝑩𝑶𝑿:-13 𝑪𝑶𝑫𝑬 1250<br/>
-𝑻𝒆𝒍:-0114391939</p>
+            <p>
+              📍 Sheger City, Lega Tefo <br/>
+              ✉ info@nadtextile.com <br/>
+              🌐 www.nadtextile.com <br/>
+              ☎ +251 935 644 444 / +251 935 67 7777
+            </p>
           </form>
         </section>
       </main>
