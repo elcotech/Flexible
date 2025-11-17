@@ -113,7 +113,7 @@ function App() {
             <textarea name="message" placeholder="💬 Your Message" required></textarea><br /><br />
             <button type="submit">Send</button>
             <p>
-              📍 Sheger City, Lega Tefo <br/>
+              📍 Sheger City, Lege Tafo <br/>
               ✉️ info@nadtextile.com <br/>
               🌐 www.nadtextile.com <br/>
               📞 +251 935 644 444 / +251 935 67 7777
